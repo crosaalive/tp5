@@ -6,9 +6,9 @@ class Index
 {
     public function index($id)
     {
-    	if (isset(IS_GET)) {
+    	// if (isset(IS_GET)) {
     		echo $id;
-    	}
+    	// }
     	
     	// dump(Config::get());
     	echo "<pre>";
