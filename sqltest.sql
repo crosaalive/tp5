@@ -1,0 +1,26 @@
+CREATE TABLE `z_user` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `user_type` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '用户类型;1:admin;2:会员',
+  `sex` tinyint(2) NOT NULL DEFAULT '0' COMMENT '性别;0:保密,1:男,2:女',
+  `birthday` int(11) NOT NULL DEFAULT '0' COMMENT '生日',
+  `last_login_time` int(11) NOT NULL DEFAULT '0' COMMENT '最后登录时间',
+  `score` int(11) NOT NULL DEFAULT '0' COMMENT '用户积分',
+  `coin` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '金币',
+  `create_time` int(11) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `user_status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '用户状态;0:禁用,1:正常,2:未验证',
+  `user_login` varchar(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT '用户名',
+  `user_pass` varchar(64) NOT NULL DEFAULT '' COMMENT '登录密码;cmf_password加密',
+  `user_nickname` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT '用户昵称',
+  `user_email` varchar(100) NOT NULL DEFAULT '' COMMENT '用户登录邮箱',
+  `user_url` varchar(100) NOT NULL DEFAULT '' COMMENT '用户个人网址',
+  `avatar` varchar(255) NOT NULL DEFAULT '' COMMENT '用户头像',
+  `signature` varchar(255) NOT NULL DEFAULT '' COMMENT '个性签名',
+  `last_login_ip` varchar(15) NOT NULL DEFAULT '' COMMENT '最后登录ip',
+  `user_activation_key` varchar(60) NOT NULL DEFAULT '' COMMENT '激活码',
+  `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '用户手机号',
+  `more` text COMMENT '扩展属性',
+  PRIMARY KEY (`id`),
+  KEY `user_login` (`user_login`),
+  KEY `user_nickname` (`user_nickname`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户表';
+
