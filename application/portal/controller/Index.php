@@ -7,6 +7,7 @@ class Index
     public function index($id)
     {
     	// if (isset(IS_GET)) {
+    	// print_r($_SERVER['HTTP_REFERER']) ;
     		echo $id;
     	// }
     	
