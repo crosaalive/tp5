@@ -120,29 +120,15 @@ return [
     // +----------------------------------------------------------------------
     
     'template'               => [
+        'layout_on'     =>  true,
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
         // 模板路径
-        'view_path'    => '',
-    //     //前台模板
-    //      'index' => [
-    //         // 模快名称
-    //         'model_name' =>'index',
-    //         // 默认模板文件名称
-    //         'default_template' => 'default',       // 这里可以切换模块下的默认模板名称
-    //     ],
-    // /**
-    //  * 后台文件配置
-    //      * */
-    //     'admin'=>[
-    //         'layout_on'     =>  true,
-    //          'layout_name'   =>  'tpl',
-    //         // 模快名称
-    //         'model_name' =>'admin',
+        //'view_path'    => '../../../public/layui2/', ////
 
-    //         // 默认模板文件名称
-    //         'default_template' =>'./public/layui2',        // 这里可以切换模块下的默认模板名称
-    //     ],
+        'layout_name'   =>  'layout',                ////
+
+        'default_template' => '',       // 这里可以切换模块下的默认模板名称
         // 模板后缀
         'view_suffix'  => 'html',
         // 模板文件名分隔符
