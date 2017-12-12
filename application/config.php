@@ -120,7 +120,7 @@ return [
     // +----------------------------------------------------------------------
     
     'template'               => [
-        'layout_on'     =>  true,
+        // 'layout_on'     =>  true,
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
         // 模板路径
@@ -129,9 +129,9 @@ return [
         //'view_base'=>__DIR__.'/../public/static/',
         // 'view_base'=>__DIR__.'/../static/', //入口文件在public下 1212
 
-        'layout_name'   =>  'layout',                ////
+        // 'layout_name'   =>  'layout',                ////
 
-        'default_template' => '',       // 这里可以切换模块下的默认模板名称
+        // 'default_template' => 'admin',       // 这里可以切换模块下的默认模板名称
         // 模板后缀
         'view_suffix'  => 'html',
         // 模板文件名分隔符

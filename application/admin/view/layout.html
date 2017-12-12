@@ -11,8 +11,8 @@
   <div class="layui-header">
     <div class="layui-logo">后台管理</div>
     <!-- 头部区域（可配合layui已有的水平导航） -->
-<!--     <ul class="layui-nav layui-layout-left">
-      <li class="layui-nav-item"><a href="">控制台</a></li>
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="{:url('index/index')}">首页</a></li>
       <li class="layui-nav-item"><a href="">商品管理</a></li>
       <li class="layui-nav-item"><a href="">用户</a></li>
       <li class="layui-nav-item">
@@ -23,7 +23,7 @@
           <dd><a href="">授权管理</a></dd>
         </dl>
       </li>
-    </ul> -->
+    </ul>
     <ul class="layui-nav layui-layout-right">
       <li class="layui-nav-item">
         <a href="javascript:;">
@@ -32,7 +32,8 @@
         </a>
         <dl class="layui-nav-child">
           <dd><a href="">基本资料</a></dd>
-          <dd><a href="">安全设置</a></dd>
+          <dd><a href="{:url('slider/index')}">安全设置</a></dd>
+
         </dl>
       </li>
       <li class="layui-nav-item"><a href="">退出</a></li>
@@ -46,8 +47,10 @@
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;">站点设置</a>
           <dl class="layui-nav-child">
-
-            <dd><a href="{:url('slider/index')}">幻灯片管理</a></dd>
+            <dd><a href="{:url('admin/index/index')}">index 测试</a></dd>
+            <dd><a href="{:url('index/add')}">add 测试</a></dd>
+            <dd><a href="{:url('test/index')}">test/index 测试</a></dd>
+            <dd><a href="{:url('slide/index')}">幻灯片管理</a></dd>
             <dd><a href="{:url('nav/index')}">导航管理</a></dd>
              <dd><a href="{:url('article/index')}">文章管理</a></dd>
              <dd><a href="{:url('seo/index')}">SEO设置</a></dd>
@@ -76,8 +79,8 @@
   
   <div class="layui-body">
     <!-- 内容主体区域 -->
-
-    <div style="padding: 15px;">{__CONTENT__}</div>
+    {__CONTENT__}
+    <div style="padding: 15px;"></div>
   </div>
   
   <div class="layui-footer">
@@ -93,6 +96,8 @@ layui.use('element', function(){
   
 });
 </script>
+
+
 </body>
 </html>
       
