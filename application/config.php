@@ -124,7 +124,10 @@ return [
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
         // 模板路径
-        //'view_path'    => '../../../public/layui2/', ////
+        'view_path'    => '', ////
+        //视图分离  视图根所在路径 
+        //'view_base'=>__DIR__.'/../public/static/',
+        // 'view_base'=>__DIR__.'/../static/', //入口文件在public下 1212
 
         'layout_name'   =>  'layout',                ////
 
